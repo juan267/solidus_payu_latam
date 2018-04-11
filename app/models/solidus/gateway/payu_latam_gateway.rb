@@ -4,7 +4,8 @@ module Solidus
     preference :account_id, :string
     preference :api_login, :string
     preference :api_key, :string
-    preference :account_country, :string, default: 'PE'
+    preference :account_country, :string, default: 'CO'
+    preference :payment_country, :string, default: 'CO'
 
     def provider_class
       ActiveMerchant::Billing::PayuLatamGateway
